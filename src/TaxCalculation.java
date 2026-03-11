@@ -2,9 +2,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class TaxCalculation {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            // ── PART 1: Using double ──────────────────────────────
             double netPriceDouble = 9.99;
             double grossDouble = netPriceDouble * 1.23;
             System.out.println("-- Using double --");
@@ -17,7 +16,6 @@ public class TaxCalculation {
             double netBackDouble = totalGrossDouble / 1.23;
             System.out.println("Net back after removing VAT: " + netBackDouble);
 
-            // ── PART 2: Using BigDecimal ──────────────────────────
             System.out.println("\n--- Using BigDecimal ---");
             BigDecimal netPriceBD = new BigDecimal("9.99");
             BigDecimal vat = new BigDecimal("1.23");
@@ -31,7 +29,6 @@ public class TaxCalculation {
             BigDecimal netBackBD = totalGrossBD.divide(vat, 10, RoundingMode.HALF_UP);
             System.out.println("Net back after removing VAT: " + netBackBD);
 
-            // ── CONCLUSION ────────────────────────────────────────
             System.out.println("\n--- Conclusion ---");
             System.out.println("double result:     " + netBackDouble);
             System.out.println("BigDecimal result: " + netBackBD);
