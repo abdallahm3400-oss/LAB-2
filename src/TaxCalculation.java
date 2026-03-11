@@ -7,7 +7,7 @@ public class TaxCalculation {
             // ── PART 1: Using double ──────────────────────────────
             double netPriceDouble = 9.99;
             double grossDouble = netPriceDouble * 1.23;
-            System.out.println("--- Using double ---");
+            System.out.println("-- Using double --");
             System.out.println("Net price: " + netPriceDouble);
             System.out.println("Gross price (+23% VAT): " + grossDouble);
 
@@ -35,7 +35,7 @@ public class TaxCalculation {
             System.out.println("\n--- Conclusion ---");
             System.out.println("double result:     " + netBackDouble);
             System.out.println("BigDecimal result: " + netBackBD);
-            System.out.println("double has tiny floating-point errors — never use it for money!");
+            System.out.println("double has tiny floating-point errors, never use it for money!");
             System.out.println("BigDecimal is exact and safe for financial calculations.");
         }
     }

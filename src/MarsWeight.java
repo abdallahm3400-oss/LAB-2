@@ -4,7 +4,7 @@ public class MarsWeight {
     static float marsWeightAbdalla;  // calculated weight on Mars (in kg)
     static double marsWeightDoubleAbdalla; // as double
     static int marsWeightIntAbdalla; // Mars weight after casting to int
-    static char marsWeightCharAbdalla; //as a char
+    static char marsWeightCharAbdalla; //as char
     static int finalValueAbdalla;  // result after doing math on char
     public static void main(String[] args) {
         // 1. Assign your Earth weight
